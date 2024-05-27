@@ -10,11 +10,10 @@ const AboutCard = () => {
             Hi Everyone, I am <span className="purple"> Bittu Kumar </span>
             from <span className="purple"> Jharkhand, India.</span>
             <br />
-            <br />I am Bittu Kumar, an{" "}
-            <span className="purple">enthusiastic</span> learner with high
-            motivational, problem-solving, and decision-making skills. I seek
-            knowledge for self-development and aim to be a helping hand for
-            community development. Highly interested in{" "}
+            <br />I am an <span className="purple">enthusiastic</span> learner
+            with high motivational, problem-solving, and decision-making skills.
+            I seek knowledge for self-development and aim to be a helping hand
+            for community development. Highly interested in{" "}
             <span className="purple">reading books</span> and participating in{" "}
             <span className="purple">
               extracurricular activities like sports
