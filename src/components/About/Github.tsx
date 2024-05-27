@@ -1,8 +1,7 @@
-import React from "react";
 // import GitHubCalendar from "react-github-calendar";
 import { Row } from "react-bootstrap";
 
-const Github=() =>{
+const Github = () => {
   // const colourTheme = {
   //   background: "transparent",
   //   text: "#ffffff",
@@ -26,6 +25,6 @@ const Github=() =>{
       /> */}
     </Row>
   );
-}
+};
 
 export default Github;

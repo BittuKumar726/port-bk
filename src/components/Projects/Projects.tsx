@@ -36,7 +36,7 @@ const Projects = () => {
                 <span><strong style="font-size: 1.5em; margin-bottom:1em;">Challenges and Solutions</strong></span>
                 <p><strong>Scalability:</strong> Optimized database queries and efficient data structures.<br><strong>Security:</strong> Implemented robust authentication and authorization.<br><strong>User Experience:</strong> Created an intuitive and engaging UI.</p>  
                 `}
-              link="https://learning-pro-3.onrender.com"
+              link="https://bkumarstore.netlify.app/"
               repoLink="https://github.com/AdityaRaj140/learning-pro"
             />
           </Col>

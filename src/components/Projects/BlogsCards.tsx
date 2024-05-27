@@ -1,8 +1,7 @@
-import React from "react";
 import Card from "react-bootstrap/Card";
 import { BsLink } from "react-icons/bs";
 
-const BlogsCards=(props)=> {
+const BlogsCards = (props: any) => {
   return (
     <a
       className="blog-link"
@@ -22,6 +21,6 @@ const BlogsCards=(props)=> {
       </Card>
     </a>
   );
-}
+};
 
 export default BlogsCards;

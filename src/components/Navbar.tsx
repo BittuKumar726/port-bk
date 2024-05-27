@@ -44,7 +44,7 @@ const NavBar = () => {
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
           onClick={() => {
-            setExpand(expand ? false : "expanded");
+            setExpand(expand ? false : true);
           }}
         >
           <span></span>
