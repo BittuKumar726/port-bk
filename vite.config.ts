@@ -9,5 +9,5 @@ export default defineConfig({
       '@': '/src',
     },
   },
-  base: "/port-bk"
+  // base: "/port-bk"
 })
