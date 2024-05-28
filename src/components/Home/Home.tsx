@@ -9,7 +9,9 @@ const Home = () => {
   const [data, setData] = useState<any>({});
   const getHomePageData = async () => {
     try {
-      const response = await axios.get("http://localhost:5001/api/home/page");
+      const response = await axios.get(
+        `${import.meta.env.PORT_API_URL}api/home/page`
+      );
       setData(response?.data?.data);
     } catch (error) {
       console.log(error, "Error");
