@@ -1,5 +1,5 @@
 import Typewriter from "typewriter-effect";
-import { G_DEFAULT_ROLES } from "../../constants";
+import { G_DEFAULT_ROLES } from "../../utils/constants";
 
 interface Props {
   roles: [];

@@ -2,23 +2,20 @@ import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../assets/home-main.svg";
 import TypeWiter from "./Type";
 import Home2 from "./Home2";
-import axios from "axios";
 import { useEffect, useState } from "react";
+import portApi from "../../api/portApi";
 
 const Home = () => {
   const [data, setData] = useState<any>({});
   const getHomePageData = async () => {
     try {
-      const response = await axios.get(
-        // `${import.meta.env.PORT_API_URL}api/home/page`
-        `https://bk-port-api.onrender.com/api/home/page`
-      );
+      const response = await portApi.post("/home/page");
       setData(response?.data?.data);
     } catch (error) {
       console.log(error, "Error");
     }
   };
-
+  console.log(data);
   useEffect(() => {
     getHomePageData();
   }, []);
