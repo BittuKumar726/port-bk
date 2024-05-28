@@ -20,8 +20,6 @@ const Home = () => {
     getHomePageData();
   }, []);
 
-  console.log({ data });
-
   return (
     <section>
       <Container fluid className="home-section" id="home">
