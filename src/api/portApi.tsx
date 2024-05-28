@@ -4,16 +4,15 @@ import {
   LS_KEY_USER_TOKENS,
 } from "../utils/constants";
 
-const portApi = () => {
+const axiosInstance = () => {
   const defaultOptions = {
-    baseUrl: `${import.meta.env.VITE_API_URL}/api`,
-    method: "GET",
+    baseURL: `${import.meta.env.VITE_API_URL}/api`,
+    method: "get",
     timeout: API_MAX_REQ_TIME_OUT_MS,
   };
   const instance = axios.create(defaultOptions);
-  const instanceRespnse = processInstanceRequest(instance);
-
-  return processInstanceResponse(instanceRespnse);
+  const response = processInstanceRequest(instance);
+  return processInstanceResponse(response);
 };
 
 const processInstanceRequest = (instance: any) => {
@@ -55,4 +54,4 @@ const processInstanceResponse = (instance: any) => {
   return instance;
 };
 
-export default portApi();
+export default axiosInstance();

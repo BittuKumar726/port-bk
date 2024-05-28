@@ -3,19 +3,18 @@ import homeLogo from "../../assets/home-main.svg";
 import TypeWiter from "./Type";
 import Home2 from "./Home2";
 import { useEffect, useState } from "react";
-import portApi from "../../api/portApi";
+import api from "../../api/portApi";
 
 const Home = () => {
   const [data, setData] = useState<any>({});
   const getHomePageData = async () => {
     try {
-      const response = await portApi.post("/home/page");
-      setData(response?.data?.data);
+      const response = await api.get("/home/page");
+      setData(response?.data);
     } catch (error) {
       console.log(error, "Error");
     }
   };
-  console.log(data);
   useEffect(() => {
     getHomePageData();
   }, []);
