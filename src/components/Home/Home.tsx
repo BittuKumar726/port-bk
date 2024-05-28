@@ -10,7 +10,8 @@ const Home = () => {
   const getHomePageData = async () => {
     try {
       const response = await axios.get(
-        `${import.meta.env.PORT_API_URL}api/home/page`
+        // `${import.meta.env.PORT_API_URL}api/home/page`
+        `https://bk-port-api.onrender.com/api/home/page`
       );
       setData(response?.data?.data);
     } catch (error) {
