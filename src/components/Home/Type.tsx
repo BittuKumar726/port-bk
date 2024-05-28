@@ -1,14 +1,16 @@
 import Typewriter from "typewriter-effect";
+import { G_DEFAULT_ROLES } from "../../constants";
 
-const Type = () => {
+interface Props {
+  roles: [];
+}
+
+const Type = (props: Props) => {
+  const { roles = G_DEFAULT_ROLES } = props;
   return (
     <Typewriter
       options={{
-        strings: [
-          "Software Developer",
-          "Frontend Developer",
-          "MERN Stack Developer",
-        ],
+        strings: roles,
         autoStart: true,
         loop: true,
         deleteSpeed: 50,
