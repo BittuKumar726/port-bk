@@ -26,15 +26,19 @@ const CustomModal = (props: any) => {
                 }}
               ></span>
             </Card.Text>
-            <Button variant="primary" href={props.link} target="_blank">
-              <BiLinkExternal /> &nbsp;
-              {"Live Demo"}
-            </Button>
+            {props.link && (
+              <Button variant="primary" href={props.link} target="_blank">
+                <BiLinkExternal /> &nbsp;
+                {"Live Demo"}
+              </Button>
+            )}
             <span>&nbsp; &nbsp;</span>
-            <Button variant="primary" href={props.repoLink} target="_blank">
-              <BiLinkExternal /> &nbsp;
-              {"GitHub Repository"}
-            </Button>
+            {props.repoLink && (
+              <Button variant="primary" href={props.repoLink} target="_blank">
+                <BiLinkExternal /> &nbsp;
+                {"GitHub Repository"}
+              </Button>
+            )}
           </Card.Body>
         </Modal.Body>
         {/* <Modal.Footer>
