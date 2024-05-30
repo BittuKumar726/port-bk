@@ -1,11 +1,27 @@
 import { Container, Row, Col } from "react-bootstrap";
-import speech from "../../assets/Projects/speech.jpg";
-import onlineExam from "../../assets/Projects/online-exam.jpg";
-import covid from "../../assets/Projects/corona1.jfif";
-import chat from "../../assets/Projects/chat1.jpg";
+// import speech from "../../assets/Projects/speech.jpg";
+// import onlineExam from "../../assets/Projects/online-exam.jpg";
+// import covid from "../../assets/Projects/corona1.jfif";
+// import chat from "../../assets/Projects/chat1.jpg";
 import ProjectCards from "./ProjectCards";
+import { useEffect, useState } from "react";
+import portApi from "../../api/portApi";
 
 const Projects = () => {
+  const [data, setData] = useState({ projects: [] });
+  const getProjects = async () => {
+    try {
+      const response = await portApi.get("/get/project");
+      setData(response?.data);
+    } catch (error) {}
+  };
+
+  console.log({ data });
+
+  useEffect(() => {
+    getProjects();
+  }, []);
+
   return (
     <Container fluid className="project-section">
       {/* <Particle /> */}
@@ -17,7 +33,23 @@ const Projects = () => {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
+          {data?.projects.length > 0
+            ? data?.projects.map((item: any, idx: number) => {
+                return (
+                  <Col md={4} className="project-card">
+                    <ProjectCards
+                      imgPath={item?.cardImgUrl}
+                      isBlog={false}
+                      title={<h3>{item?.title}</h3>}
+                      description={`${item?.description}`}
+                      link={item?.demoUrl}
+                      repoLink={item?.repoUrl}
+                    />
+                  </Col>
+                );
+              })
+            : null}
+          {/* <Col md={4} className="project-card">
             <ProjectCards
               imgPath={onlineExam}
               isBlog={false}
@@ -70,7 +102,7 @@ const Projects = () => {
               description={`-> Developed a real time chat application where the users can create their Username & start chatting with the other people in the chat room.`}
               link="https://chatvet.herokuapp.com/index.html"
             />
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     </Container>
