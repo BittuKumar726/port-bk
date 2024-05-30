@@ -36,7 +36,7 @@ const Projects = () => {
           {data?.projects.length > 0
             ? data?.projects.map((item: any, idx: number) => {
                 return (
-                  <Col md={4} className="project-card">
+                  <Col md={4} className="project-card" key={`${idx}-project`}>
                     <ProjectCards
                       imgPath={item?.cardImgUrl}
                       isBlog={false}
