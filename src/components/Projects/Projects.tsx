@@ -1,19 +1,17 @@
 import { Container, Row, Col } from "react-bootstrap";
-// import speech from "../../assets/Projects/speech.jpg";
-// import onlineExam from "../../assets/Projects/online-exam.jpg";
-// import covid from "../../assets/Projects/corona1.jfif";
-// import chat from "../../assets/Projects/chat1.jpg";
 import ProjectCards from "./ProjectCards";
 import { useEffect, useState } from "react";
-import portApi from "../../api/portApi";
+// import portApi from "../../api/portApi";
+import projectData from "../../data/project_data.json";
 
 const Projects = () => {
-  const [data, setData] = useState({ projects: [] });
+  const [data, setData] = useState<any>({ projects: [] });
   const getProjects = async () => {
-    try {
-      const response = await portApi.get("/get/project");
-      setData(response?.data);
-    } catch (error) {}
+    // try {
+    //   const response = await portApi.get("/get/project");
+    //   setData(response?.data);
+    // } catch (error) {}
+    setData(projectData);
   };
 
   console.log({ data });
@@ -51,7 +49,23 @@ const Projects = () => {
             : null}
           {/* <Col md={4} className="project-card">
             <ProjectCards
-              imgPath={onlineExam}
+              imgPath={
+                "https://res.cloudinary.com/bk-store/image/upload/v1719077925/youtube-banner-8077450_1280_b8e0yu.jpg"
+              }
+              isBlog={false}
+              title={<h3>Meal Hub</h3>}
+              description={
+                "<span><strong style='font-size: 1.5em; margin-bottom:1em;'>Project Overview</strong></span> <p>Meal Hub is a dynamic web application. It offers a variety of features designed to enhance users' culinary experience:</p> <h2 id='features'>Features</h2> <ul> <li><p><strong>Menu Exploration</strong>: Users can browse through various meal categories, discovering a wide array of dishes tailored to their preferences.</p> </li> <li><p><strong>Favorite Meals</strong>: A personalized feature allows users to save their favorite meals for easy access and reference.</p> </li> <li><p><strong>Random Meal Generator</strong>: Provides users with a random meal suggestion for culinary inspiration or a surprise dish.</p> </li> <li><p><strong>About Section</strong>: Learn more about the website, its creators, and its development journey through the dedicated About section.</p> </li> <li><p><strong>Responsive Design</strong>: Optimized for various devices, ensuring a seamless experience whether accessed from a desktop, tablet, or mobile phone.</p> </li> </ul> <p>Explore <a href='https://bkmealhub.netlify.app/'>Meal Hub</a> today to discover and enjoy a world of culinary delights!</p>"
+              }
+              link="https://bkumarstore.netlify.app/"
+              repoLink="https://github.com/AdityaRaj140/learning-pro"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCards
+              imgPath={
+                "https://res.cloudinary.com/bk-store/image/upload/v1717068660/bkport/online-exam_wkgt2l.jpg"
+              }
               isBlog={false}
               title={<h3>Online eBook Store Project</h3>}
               description={`<span><strong style="font-size: 1.5em; margin-bottom:1em;">Project Overview</strong></span>
@@ -74,7 +88,9 @@ const Projects = () => {
           </Col>
           <Col md={4} className="project-card">
             <ProjectCards
-              imgPath={speech}
+              imgPath={
+                "https://res.cloudinary.com/bk-store/image/upload/v1717068661/bkport/speech_d9y4q3.jpg"
+              }
               isBlog={false}
               title="Speech Recognition"
               description={`-> Speech recognition is to convert speech into a sequence of words by  a computer program.
@@ -86,7 +102,9 @@ const Projects = () => {
           </Col>
           <Col md={4} className="project-card">
             <ProjectCards
-              imgPath={covid}
+              imgPath={
+                "https://res.cloudinary.com/bk-store/image/upload/v1717068662/bkport/corona_g43uft.jpg"
+              }
               isBlog={false}
               title="COVID-19 TRACKER"
               description={`-> The World Health Organization has declared the outbreak of the novel coronavirus, Covid-19 as pandemic across the world. With its alarming surge of affected cases throughout the world, lockdown, and awareness (social distancing, use of masks etc.) 
@@ -96,7 +114,9 @@ const Projects = () => {
           </Col>
           <Col md={4} className="project-card">
             <ProjectCards
-              imgPath={chat}
+              imgPath={
+                "https://res.cloudinary.com/bk-store/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1717077254/comment-widget_unjgxd.jpg"
+              }
               isBlog={false}
               title="Real Time Chat Application"
               description={`-> Developed a real time chat application where the users can create their Username & start chatting with the other people in the chat room.`}
