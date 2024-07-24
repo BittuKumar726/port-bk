@@ -6,25 +6,25 @@ import { AiOutlineDownload } from "react-icons/ai";
 import ResumeContent from "./ResumeContent";
 
 const Resume = () => {
-  const uri = "https://porfolio-backend.vercel.app/ranks/getRanks";
-  const [spojRank, upadteSpojRank] = useState(0);
-  const [hackerrank, upadteHackerank] = useState(0);
-  const [sem, upadateSem] = useState(0);
-  const [cgpa, upadteCgpa] = useState(0);
+  // const uri = "https://porfolio-backend.vercel.app/ranks/getRanks";
+  // const [spojRank, upadteSpojRank] = useState(0);
+  // const [hackerrank, upadteHackerank] = useState(0);
+  // const [sem, upadateSem] = useState(0);
+  // const [cgpa, upadteCgpa] = useState(0);
 
-  useEffect(() => {
-    axios
-      .get(uri)
-      .then((res) => {
-        upadteSpojRank(res.data.message[0].spojRank);
-        upadteHackerank(res.data.message[1].hackerrank);
-        upadteCgpa(res.data.message[2].cgpa);
-        upadateSem(res.data.message[3].sem);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }, []);
+  // useEffect(() => {
+  //   axios
+  //     .get(uri)
+  //     .then((res) => {
+  //       upadteSpojRank(res.data.message[0].spojRank);
+  //       upadteHackerank(res.data.message[1].hackerrank);
+  //       upadteCgpa(res.data.message[2].cgpa);
+  //       upadateSem(res.data.message[3].sem);
+  //     })
+  //     .catch((err) => {
+  //       console.log(err);
+  //     });
+  // }, []);
 
   return (
     <Container fluid className="resume-section">
@@ -61,21 +61,21 @@ const Resume = () => {
           <Col md={6} className="resume-right">
             <h3 className="resume-title">Education</h3>
             <ResumeContent
-              title="IMSC MATHS AND COMPUTING [BIT Mesra, Ranchi] "
-              date="2018 - Present"
-              content={[`CGPA: ${cgpa} (Till ${sem}th Sem)`]}
+              title="Bachelor of Technology (Gandhi Institute of Engineering and Technology, Gunupur)"
+              date="2017 - 2021"
+              content={[`CGPA: ${8.5}`]}
             />
 
-            <h3 className="resume-title">Publications</h3>
+            {/* <h3 className="resume-title">Publications</h3>
             <ResumeContent
               title=""
               content={[
                 "Article entitled An Overlapping Sliding Window and Combined Feature based Emotion Recognition System for EEG Signals publised in Emerald Publication;10.1108/ACI-05-2021-0130",
               ]}
-            />
+            /> */}
 
-            <h3 className="resume-title">Ranks and Achivements</h3>
-            <ResumeContent
+            {/* <h3 className="resume-title">Ranks and Achivements</h3> */}
+            {/* <ResumeContent
               title=""
               content={[
                 `Current rank in Spoj ${spojRank}`,
@@ -83,7 +83,7 @@ const Resume = () => {
                 "Top Performer in Code-Break 1.0",
                 "Participant in Hack-A-Bit 2019",
               ]}
-            />
+            /> */}
           </Col>
         </Row>
         <Row style={{ justifyContent: "center", position: "relative" }}>
