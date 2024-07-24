@@ -1,29 +1,31 @@
 import { Col, Row } from "react-bootstrap";
+import { FcLinux } from "react-icons/fc";
 import {
-  SiWindows,
-  SiVisualstudiocode,
-  SiJupyter,
-  SiPostman,
   SiHeroku,
+  SiJupyter,
+  SiNetlify,
+  SiPostman,
+  SiVisualstudiocode,
+  SiWindows10,
 } from "react-icons/si";
 
 const Toolstack = () => {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <SiWindows />
+        <SiWindows10 color="#2272b6" />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiVisualstudiocode />
+        <FcLinux />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiJupyter />
+        <SiVisualstudiocode color="#1e97e8" />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiPostman />
+        <SiPostman color="#e84d31" />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiHeroku />
+        <SiNetlify color="#24c1b1" />
       </Col>
     </Row>
   );

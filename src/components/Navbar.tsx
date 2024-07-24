@@ -10,6 +10,7 @@ import {
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
+import { CgFileDocument } from "react-icons/cg";
 
 const NavBar = () => {
   const [expand, setExpand] = useState(false);
@@ -85,21 +86,17 @@ const NavBar = () => {
               </Nav.Link>
             </Nav.Item>
 
-            {/* <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/resume"
-                onClick={() => setExpand(false)}
-              >
+            <Nav.Item>
+              <Nav.Link as={Link} to="/resume" onClick={() => setExpand(false)}>
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
               </Nav.Link>
-            </Nav.Item> */}
+            </Nav.Item>
 
-            <Nav.Item>
+            {/* <Nav.Item>
               <Nav.Link href="" target="_blank" rel="noreferrer">
                 <ImBlog style={{ marginBottom: "2px" }} /> Blogs
               </Nav.Link>
-            </Nav.Item>
+            </Nav.Item> */}
 
             {/* <Nav.Item className="fork-btn">
               <Button
