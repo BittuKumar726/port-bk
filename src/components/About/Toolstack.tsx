@@ -1,8 +1,6 @@
 import { Col, Row } from "react-bootstrap";
 import { FcLinux } from "react-icons/fc";
 import {
-  SiHeroku,
-  SiJupyter,
   SiNetlify,
   SiPostman,
   SiVisualstudiocode,

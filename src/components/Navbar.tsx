@@ -1,16 +1,15 @@
 import { useState } from "react";
-import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import logo1 from "../assets/logo6.jpg";
-import { Link } from "react-router-dom";
-import { ImBlog } from "react-icons/im";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
 import {
-  AiOutlineHome,
   AiOutlineFundProjectionScreen,
+  AiOutlineHome,
   AiOutlineUser,
 } from "react-icons/ai";
 import { CgFileDocument } from "react-icons/cg";
+import { Link } from "react-router-dom";
+import logo1 from "../assets/logo6.jpg";
 
 const NavBar = () => {
   const [expand, setExpand] = useState(false);
