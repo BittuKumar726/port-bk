@@ -5,3 +5,6 @@ export const G_DEFAULT_ROLES = [
   "Frontend Developer",
   "MERN Stack Developer",
 ];
+
+export const CV_URL =
+  "https://drive.google.com/file/d/1KTJn2iIFDRr6qX8uNAkw6aKiSU2u7LDL/view";

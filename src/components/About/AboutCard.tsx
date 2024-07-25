@@ -39,14 +39,6 @@ const AboutCard = () => {
             proficient in version control using{" "}
             <span className="purple">Git and Jira</span>.
           </p>
-          {/* <ul>
-            <li className="about-activity">
-              <ImPointRight /> Playing Games
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Listening Song
-            </li>
-          </ul> */}
         </blockquote>
       </Card.Body>
     </Card>

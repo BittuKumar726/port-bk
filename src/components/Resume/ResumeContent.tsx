@@ -7,11 +7,26 @@ function ResumeContent(props: any) {
       <p>
         <em>{props.date}</em>
       </p>
-      <ul>
-        {props.content.map((value: any, index: number) => (
-          <li key={index}> ‣ {value}</li>
-        ))}
-      </ul>
+      {props?.isProject ? (
+        <>
+          {props.content.map((value: any, index: number) => (
+            <div key={index}>
+              <b>{value?.projectName}</b>
+              <ul>
+                {value.desc.map((item: any, idx: number) => (
+                  <li key={idx}> ‣{item}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </>
+      ) : (
+        <ul>
+          {props.content.map((value: any, index: number) => (
+            <li key={index}> ‣{value}</li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 }
