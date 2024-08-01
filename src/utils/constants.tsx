@@ -7,5 +7,5 @@ export const G_DEFAULT_ROLES = [
 ];
 
 export const CV_URL = `https://drive.google.com/file/d/${
-  import.meta.env.CV_ID
+  import.meta.env.VITE_CV_ID
 }/view`;
