@@ -7,4 +7,4 @@ export const G_DEFAULT_ROLES = [
 ];
 
 export const CV_URL =
-  "https://drive.google.com/file/d/1KTJn2iIFDRr6qX8uNAkw6aKiSU2u7LDL/view";
+  "https://drive.google.com/file/d/1TDE7M35NoGH8QL0d0dHBNQ9ra30T4yBh/view";
