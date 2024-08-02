@@ -37,7 +37,7 @@ const ProjectCards = (props: any) => {
                 ></span>
                 &nbsp; &nbsp;
                 <span
-                  style={{ color: "blue", cursor: "pointer" }}
+                  style={{ color: "#04ffe3", cursor: "pointer" }}
                   onClick={handleOpenModal}
                 >
                   Read More
