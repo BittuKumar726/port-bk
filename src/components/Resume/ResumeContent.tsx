@@ -14,7 +14,12 @@ function ResumeContent(props: any) {
               <b>{value?.projectName}</b>
               <ul>
                 {value.desc.map((item: any, idx: number) => (
-                  <li key={idx}> ‣{item}</li>
+                  <li
+                    key={idx}
+                    dangerouslySetInnerHTML={{
+                      __html: item,
+                    }}
+                  ></li>
                 ))}
               </ul>
             </div>
@@ -23,7 +28,7 @@ function ResumeContent(props: any) {
       ) : (
         <ul>
           {props.content.map((value: any, index: number) => (
-            <li key={index}> ‣{value}</li>
+            <li key={index}>{value}</li>
           ))}
         </ul>
       )}

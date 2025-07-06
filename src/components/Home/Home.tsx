@@ -23,7 +23,7 @@ const Home = () => {
   }, []);
 
   return (
-    <section>
+    <section className="home-page">
       <Container fluid className="home-section" id="home">
         <Container className="home-content">
           <Row>

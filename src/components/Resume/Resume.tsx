@@ -40,18 +40,46 @@ const Resume = () => {
           <Col md={6} className="resume-left">
             <h3 className="resume-title">Experience</h3>
             <ResumeContent
-              title="Software developer 2 - ( Folksmedia India Pvt Ltd )"
-              date="July 2023 - Present"
+              title="Senior software developer - ( Millipixels )"
+              date="Feb 2025 - Present"
               isProject={true}
               content={[
                 {
-                  projectName: "Project CVC/GVC",
+                  projectName: "",
                   desc: [
-                    "Developed an ERP system for CVC/GVC using ReactJs, Typescript, NodeJs, Python, FastApi, Django, Express, Ant Design/Material UI and MongoDB",
-                    "Implemented live notifications using pusher.js and custom timezone settings for various project time zones.",
-                    "Enhanced web app functionalities, ensuring design consistency and performance optimization.",
-                    "Ensured cross-browser compatibility and collaborated with back-end developers for seamless API integration.",
-                    "Conducted thorough testing, bug fixing, and participated in code reviews.",
+                    "<b>Driving Scalable Frontend Architecture :</b> Leading the design and implementation of modular, maintainable UI components using React, TypeScript, and modern design systems, improving development efficiency by 30%",
+                    "<b>Cross-Functional Collaboration & Mentorship :</b> Collaborating closely with backend, QA, and product teams to deliver high-performance features; mentoring junior developers and conducting code reviews to uphold code quality and best practices",
+                    "<b>Spearheaded performance, UX, and accessibility</b> improvements across core web applications, resulting in faster load times, enhanced user engagement, and significantly improved Lighthouse scores"
+                  ],
+                },
+              ]}
+            />
+            <ResumeContent
+              title="Software development Engineer - ( Futuristic Labs )"
+              date="Sep 2024 - Jan 2025"
+              isProject={true}
+              content={[
+                {
+                  projectName: "",
+                  desc: [
+                    "<b>Built Smart Kitchen UI :</b> Developed a responsive, user-friendly interface for IoT-enabled kitchen appliances using React.js and Material UI",
+                    "<b>Boosted Appliance Efficiency :</b> Achieved a 20% improvement in functionality through seamless automation and integration of IoT devices",
+                    "<b>Enhanced Real-Time Performance :</b> Optimized data flow and live updates with Firebase and MongoDB, ensuring reliable and efficient IoT interactions"
+                  ],
+                },
+              ]}
+            />
+            <ResumeContent
+              title="Software developer 2 - ( Folksmedia India Pvt Ltd )"
+              date="July 2023 - Aug 2024"
+              isProject={true}
+              content={[
+                {
+                  projectName: "",
+                  desc: [
+                    "<b>Led ERP System Development :</b> Spearheaded a modern ERP platform using React, Node.js, and MongoDB, streamlining core business operations and boosting efficiency",
+                    "<b>Enhanced Global UX :</b> Integrated real-time alerts and timezone customization to deliver a seamless user experience across regions",
+                    "<b>Built Scalable Architecture :</b> Developed modular, reusable components and ensured robust API integration through close backend collaboration and code reviews"
                   ],
                 },
               ]}
@@ -59,30 +87,14 @@ const Resume = () => {
             <ResumeContent
               title="Software developer - ( Siscaso Pvt Ltd Technologies )"
               date="October 2020 - June 2023"
-              projectName="CVC/GVC"
               isProject={true}
               content={[
                 {
-                  projectName: "Project Medical Council",
+                  projectName: "",
                   desc: [
-                    "Designed and implemented a user management system for students, doctors, institutes, admins and super admins using ReactJs, Typescript, Python, Flask, Ant Design/Material UI, MongoDB.",
-                    "Integrated bulk data upload functionality for institutes, streamlining ad￾ministrative processes.",
-                    "Ensured secure access and data integrity with advanced authentication and authorization mechanisms.",
-                  ],
-                },
-                {
-                  projectName: "Project Bar Council",
-                  desc: [
-                    "Developed a portal for advocates, associations, and public welfare fund nominees, facilitating seamless registration and data management using ReactJs, Typescript, Python, Flask, Ant Design/Material UI, MongoDB.",
-                    "Created a search portal for efficient access to advocate information and bar association records.",
-                  ],
-                },
-                {
-                  projectName: "Project School & Test portal",
-                  desc: [
-                    "Led the creation of an online testing platform for educational and place￾ment assessments across India.",
-                    "Supervised the entire project lifecycle, from planning and design to de￾ployment.",
-                    "Implemented real-time reporting and analytics tools to track test perfor￾mance and participation rates using ReactJs, Typescript, Python, Flask, Ant Design/Material UI, MongoDB technologies.",
+                    "<b>Engineered Secure User Management :</b> Designed robust systems ensuring secure, role-based access and data integrity for diverse users including students, doctors, and admins",
+                    "<b>Boosted Workflow Efficiency :</b> Led development of a scalable testing platform with real-time analytics and streamlined bulk data uploads, revolutionizing educational assessments nationwide",
+                    "<b>Delivered Full-Stack Solutions :</b> Managed end-to-end portal development for registration and data workflows, building modular components with React and Flask, and maintaining high-quality, tested code"
                   ],
                 },
               ]}

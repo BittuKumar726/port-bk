@@ -1,11 +1,13 @@
 html {
-  --section-background-color: linear-gradient(to bottom left,
+  /* --section-background-color: linear-gradient(to bottom left,
       rgba(17, 16, 16, 0.582),
-      rgba(12, 8, 24, 0.904));
+      rgba(12, 8, 24, 0.904)); */
 
-  --image-gradient: linear-gradient(to bottom left,
-      rgba(17, 16, 16, 0.678),
-      rgba(12, 10, 22, 0.863));
+  --image-gradient: linear-gradient(
+    to bottom left,
+    rgba(17, 16, 16, 0.678),
+    rgba(12, 10, 22, 0.863)
+  );
 
   --imp-text-color: #70d9f0;
 }
@@ -68,9 +70,9 @@ html {
 /* Navbar Section  */
 /* --------- */
 .sticky {
-  background-color: #212038d8 !important;
+  background-color: rgba(13, 183, 225, 0.171);
   transition: all 0.3s ease-out 0s !important;
-  box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
+  box-shadow: 0px 5px 5px 0px rgba(40, 124, 145, 0.171) !important;
   backdrop-filter: blur(15px) !important;
 }
 
@@ -133,11 +135,16 @@ html {
   opacity: 0.9 !important;
 }
 
+.expand-nav {
+  backdrop-filter: blur(15px) !important;
+
+}
+
 @media (max-width: 767px) {
   .navbar {
     padding: 1rem 2rem !important;
     font-size: 1.4rem !important;
-    background-color: #181a27 !important;
+    background-color: rgba(13, 183, 225, 0.171);
   }
 
   .navbar-nav .nav-item a::after {
@@ -151,7 +158,9 @@ html {
 
 .logo {
   height: 3em !important;
-  width: 5em !important;
+  width: 3em !important;
+  background-color: #17e6f1;
+  border-radius: 50%;
 }
 
 .navbar-nav .nav-link {
@@ -203,6 +212,11 @@ html {
 /* --------- */
 /* Home section */
 /* --------- */
+.home-page {
+  background-image: var(--image-gradient), url(./assets/home-bg2.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
 .wave {
   animation-name: wave-animation;
   /* Refers to the name of your @keyframes element below */
@@ -264,9 +278,6 @@ html {
 }
 
 .home-section {
-  position: relative;
-  z-index: -1;
-  background-image: var(--image-gradient), url(./assets/home-bg2.jpg);
   background-position: top center;
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
@@ -274,7 +285,7 @@ html {
 }
 
 .home-content {
-  padding: 9rem 0 2rem !important;
+  padding: 5em 0 2rem !important;
   color: whitesmoke;
   text-align: left;
 }
@@ -318,7 +329,7 @@ html {
 
 .myAvtar {
   justify-content: center !important;
-  padding-top: 9em !important;
+  padding-top: 2em !important;
 }
 
 @media (max-width: 767px) {
@@ -331,12 +342,12 @@ html {
 .home-about-section {
   position: relative;
   padding-bottom: 70px !important;
-  padding-top: 70px !important;
+  /* padding-top: 70px !important; */
 }
 
 .home-about-description {
   color: white !important;
-  padding-top: 100px !important;
+  /* padding-top: 100px !important; */
   padding-bottom: 20px !important;
   text-align: center;
 }
@@ -415,8 +426,7 @@ html {
 .footer {
   background-color: rgb(4, 20, 22);
   bottom: 0 !important;
-  padding-top: 10px !important;
-  padding-bottom: 8px !important;
+  padding: 20px;
 }
 
 .footer-copywright {
@@ -683,7 +693,6 @@ html {
 
 .resume .resume-item ul li {
   padding-bottom: 10px;
-  list-style: none;
 }
 
 .resume .resume-item:last-child {

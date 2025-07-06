@@ -9,7 +9,7 @@ import {
 } from "react-icons/ai";
 import { CgFileDocument } from "react-icons/cg";
 import { Link } from "react-router-dom";
-import logo1 from "../assets/logo6.jpg";
+import logo1 from "../assets/logo7.png";
 
 const NavBar = () => {
   const [expand, setExpand] = useState(false);
@@ -30,8 +30,8 @@ const NavBar = () => {
       expanded={expand}
       fixed="top"
       expand="md"
-      className={navColor ? "sticky" : "navbar"}
-    >
+      className={`${navColor ? "sticky" : "navbar"}${expand ? " expand-nav" : ""}`}
+      >
       <Container>
         <Navbar.Brand href="/port-bk" style={{ borderRadius: "60px" }}>
           <img
@@ -90,23 +90,6 @@ const NavBar = () => {
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
               </Nav.Link>
             </Nav.Item>
-
-            {/* <Nav.Item>
-              <Nav.Link href="" target="_blank" rel="noreferrer">
-                <ImBlog style={{ marginBottom: "2px" }} /> Blogs
-              </Nav.Link>
-            </Nav.Item> */}
-
-            {/* <Nav.Item className="fork-btn">
-              <Button
-                href=""
-                target="_blank"
-                className="fork-btn-inner"
-              >
-                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-                <AiFillStar style={{ fontSize: "1.1em" }} />
-              </Button>
-            </Nav.Item> */}
           </Nav>
         </Navbar.Collapse>
       </Container>

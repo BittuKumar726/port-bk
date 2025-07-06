@@ -23,7 +23,7 @@ const AboutCard = () => {
               team player with leadership qualities
             </span>
             . I am also extremely inclined towards spirituality and humanity. I
-            have around <span className="purple">3 years and 10 months</span> of
+            have around <span className="purple">4 years and 7 months</span> of
             experience as a software developer with expertise in developing web
             applications using <span className="purple">ReactJs</span>,{" "}
             <span className="purple">NodeJs</span>,{" "}

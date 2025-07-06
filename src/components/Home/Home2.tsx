@@ -10,7 +10,7 @@ const Home2 = (props: any) => {
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
-        <Row>
+        <Row style={{ justifyContent: "center", alignItems: "center" }}>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
@@ -53,16 +53,7 @@ const Home2 = (props: any) => {
                   <AiFillGithub />
                 </a>
               </li>
-              {/* <li className="social-icons">
-                <a
-                  href=""
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiOutlineTwitter />
-                </a>
-              </li> */}
+
               <li className="social-icons">
                 <a
                   href="http://www.linkedin.com/in/kumarbittu"
@@ -73,16 +64,6 @@ const Home2 = (props: any) => {
                   <FaLinkedinIn />
                 </a>
               </li>
-              {/* <li className="social-icons">
-                <a
-                  href=""
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour home-social-icons"
-                >
-                  <AiFillInstagram />
-                </a>
-              </li> */}
             </ul>
           </Col>
         </Row>

@@ -1,6 +1,7 @@
 import { Col, Row } from "react-bootstrap";
 import { FcLinux } from "react-icons/fc";
 import {
+  SiApple,
   SiNetlify,
   SiPostman,
   SiVisualstudiocode,
@@ -10,6 +11,9 @@ import {
 const Toolstack = () => {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiApple color="#e4dddd" />
+      </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiWindows10 color="#2272b6" />
       </Col>
