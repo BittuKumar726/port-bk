@@ -4,15 +4,17 @@ import {
   SiApple,
   SiNetlify,
   SiPostman,
-  SiVisualstudiocode,
-  SiWindows10,
 } from "react-icons/si";
+import { FaWindows } from "react-icons/fa";
+import { BiLogoVisualStudio } from "react-icons/bi";
+
+
 
 const Toolstack = () => {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <SiWindows10 color="#2272b6" />
+        <FaWindows color="#2272b6" />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiApple color="#e4dddd" />
@@ -21,7 +23,7 @@ const Toolstack = () => {
         <FcLinux />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiVisualstudiocode color="#1e97e8" />
+        <BiLogoVisualStudio color="#1e97e8" />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiPostman color="#e84d31" />
