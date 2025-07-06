@@ -5,7 +5,7 @@ import {
   SiNetlify,
   SiPostman,
   SiVisualstudiocode,
-  SiWindows10,
+  SiWindows10
 } from "react-icons/si";
 
 const Toolstack = () => {
