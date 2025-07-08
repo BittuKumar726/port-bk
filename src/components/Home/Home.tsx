@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 // import api from "../../api/portApi";
 import homeData from "../../data/home.json";
 
-const Home = () => {
+const Home = (props: any) => {
   const [data, setData] = useState<any>({});
   const getHomePageData = async () => {
     //  Commented due to api issues
@@ -16,7 +16,7 @@ const Home = () => {
     // } catch (error) {
     //   console.log(error, "Error");
     // }
-    setData(homeData);
+    setData(props?.data);
   };
   useEffect(() => {
     getHomePageData();
@@ -26,20 +26,23 @@ const Home = () => {
     <section className="home-page">
       <Container fluid className="home-section" id="home">
         <Container className="home-content">
-          <Row>
+          <Row
+            style={{ justifyContent: "space-around" }}
+            className="home-sub-content"
+          >
             <Col md={6} className="home-header">
-              <h1 style={{ paddingBottom: 15 }} className="heading">
+              <h1 style={{ paddingBottom: 15 }}>
                 Hi There!{" "}
                 <span className="wave" role="img" aria-labelledby="wave">
                   👋🏻
                 </span>
               </h1>
-              <h1 className="heading-name">
-                I'M
-                <strong className="main-name"> BITTU KUMAR</strong>
+              <h1>
+                I'M{" "}
+                <strong className="main-name">{homeData?.name}</strong>
               </h1>
 
-              <div style={{ padding: 50, textAlign: "left" }}>
+              <div style={{ textAlign: "left" }}>
                 <TypeWiter roles={data?.roles} />
               </div>
             </Col>

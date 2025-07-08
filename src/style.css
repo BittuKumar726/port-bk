@@ -70,7 +70,7 @@ html {
 /* Navbar Section  */
 /* --------- */
 .sticky {
-  background-color: rgba(13, 183, 225, 0.171);
+  background-color: rgb(7 7 7 / 55%);
   transition: all 0.3s ease-out 0s !important;
   box-shadow: 0px 5px 5px 0px rgba(40, 124, 145, 0.171) !important;
   backdrop-filter: blur(15px) !important;
@@ -137,7 +137,6 @@ html {
 
 .expand-nav {
   backdrop-filter: blur(15px) !important;
-
 }
 
 @media (max-width: 767px) {
@@ -288,6 +287,9 @@ html {
   padding: 5em 0 2rem !important;
   color: whitesmoke;
   text-align: left;
+  width: 80% !important;
+  display: flex;
+  justify-content: center;
 }
 
 .heading {
@@ -315,7 +317,20 @@ html {
   color: #958d98 !important;
 }
 
+.introduction-text {
+  font-size: 2em;
+  text-align: start;
+}
+
 @media (max-width: 767px) {
+  .home-sub-content {
+    gap: 80px;
+  }
+
+  .home-header {
+    width: auto !important;
+  }
+
   .Typewriter__wrapper {
     font-size: 1.4em !important;
     font-weight: 500 !important;
@@ -324,6 +339,11 @@ html {
 
   .Typewriter__cursor {
     display: none !important;
+  }
+
+  .introduction-text{
+    text-align: center;
+    font-size: 1.6em;
   }
 }
 
@@ -424,7 +444,7 @@ html {
 /* Footer */
 /* --------- */
 .footer {
-  background-color: rgb(4, 20, 22);
+  background-color: rgb(7 7 7 / 55%);
   bottom: 0 !important;
   padding: 20px;
 }
@@ -438,6 +458,12 @@ html {
 }
 
 @media (max-width: 767px) {
+  .home-about-body{
+    padding: 17px;
+    text-align: justify;
+    letter-spacing: -1px;
+  }
+
   .footer-copywright {
     text-align: center !important;
   }

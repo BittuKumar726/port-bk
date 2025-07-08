@@ -5,7 +5,8 @@ import Techstack from "./Techstack";
 import Toolstack from "./Toolstack";
 import Github from "./Github";
 
-const About = () => {
+const About = (props: any) => {
+  const {data} = props
   return (
     <Container fluid className="about-section">
       {/* <Particle /> */}
@@ -22,7 +23,7 @@ const About = () => {
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
               Know Who <strong className="purple">I'M</strong>
             </h1>
-            <AboutCard />
+            <AboutCard data={data}/>
           </Col>
           <Col
             md={5}

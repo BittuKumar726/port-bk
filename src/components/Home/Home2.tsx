@@ -11,8 +11,8 @@ const Home2 = (props: any) => {
     <Container fluid className="home-about-section" id="about">
       <Container>
         <Row style={{ justifyContent: "center", alignItems: "center" }}>
-          <Col md={8} className="home-about-description">
-            <h1 style={{ fontSize: "2.6em" }}>
+          <Col md={7} className="home-about-description">
+            <h1 className="introduction-text">
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
